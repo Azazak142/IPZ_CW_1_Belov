@@ -97,9 +97,9 @@ fun MainWindow( modifier: Modifier = Modifier) {
 
         Box(
             modifier = modifier
-                .align(alignment = Alignment.CenterHorizontally)
+                .align(alignment = Alignment.Start)
                 //.background(color = Color(red = 226, blue = 216, green = 227))
-                .padding(top = 100.dp)
+                .padding(top = 100.dp, start= 80.dp)
         ) {
             Icon(
                 imageVector = iconPhone,
@@ -119,20 +119,20 @@ fun MainWindow( modifier: Modifier = Modifier) {
         }
         Box(
             modifier = modifier
-                .align(alignment = Alignment.CenterHorizontally)
+                .align(alignment = Alignment.Start)
                 //.background(color = Color(red = 226, blue = 216, green = 227))
-                .padding(top = 0.dp)
+                .padding(top = 0.dp, start= 80.dp)
         ) {
             Icon(
-                imageVector = iconPhone,
+                imageVector = iconSocials,
                 tint = Color.Black,
-                contentDescription = "Phone",
+                contentDescription = "Share",
                 modifier = Modifier
-                    .padding(all = 12.dp)
+                    .padding(bottom = 12.dp, top = 12.dp, end = 12.dp, start = 12.dp)
                     .size(24.dp)
             )
             Text(
-                text = "+11 (123) 444 555 666",
+                text = "@AndroidDev",
                 fontSize = 18.sp,
                 modifier = Modifier
                     .padding(bottom = 12.dp, top = 12.dp, end = 12.dp, start = 60.dp)
@@ -141,20 +141,20 @@ fun MainWindow( modifier: Modifier = Modifier) {
         }
         Box(
             modifier = modifier
-                .align(alignment = Alignment.CenterHorizontally)
+                .align(alignment = Alignment.Start)
                 //.background(color = Color(red = 226, blue = 216, green = 227))
-                .padding(top = 0.dp)
+                .padding(top = 0.dp, start= 80.dp)
         ) {
             Icon(
-                imageVector = iconPhone,
+                imageVector = iconMail,
                 tint = Color.Black,
-                contentDescription = "Phone",
+                contentDescription = "Email",
                 modifier = Modifier
                     .padding(all = 12.dp)
                     .size(24.dp)
             )
             Text(
-                text = "+11 (123) 444 555 666",
+                text = "Azazak142@gmail.com",
                 fontSize = 18.sp,
                 modifier = Modifier
                     .padding(bottom = 12.dp, top = 12.dp, end = 12.dp, start = 60.dp)
