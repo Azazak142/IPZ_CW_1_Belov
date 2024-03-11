@@ -21,6 +21,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.mycr1_belov.ui.theme.Mycr1_BelovTheme
 
 class MainActivity : ComponentActivity() {
@@ -58,13 +59,24 @@ fun MainWindow( modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .size(100.dp)
             )
+
         }
-
-
         Text(
-            text = "Hello !",
-            modifier = modifier
+            text = "Dmitro Belov",
+            fontSize = 36.sp,
+            modifier = Modifier
+                //.padding(start = 12.dp, bottom = 23.dp)
+                .align(alignment = Alignment.CenterHorizontally)
         )
+        Text(
+            text = "Android Developer",
+            fontSize = 18.sp,
+            modifier = Modifier
+                .align(alignment = Alignment.CenterHorizontally)
+
+        )
+
+
 
     }
 }
